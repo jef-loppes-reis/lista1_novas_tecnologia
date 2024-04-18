@@ -1,11 +1,19 @@
-# Escreva um programa que leia um número e verifique se é ou não um
-# número primo.
+"""Escreva um programa que leia um número e verifique se é ou não um
+número primo."""
 
 
 from os import system
 
 
 def check_num_primo(num:int) -> None:
+    """_summary_
+
+    Args:
+        num (int): _description_
+
+    Returns:
+        _type_: _description_
+    """
     if num == 1:
         print('\nNumero e 1')
         return None
@@ -15,6 +23,7 @@ def check_num_primo(num:int) -> None:
             break
         print(f'\nO numero {num} e primo!')
         break
+    return None
 
 
 if __name__ == '__main__':

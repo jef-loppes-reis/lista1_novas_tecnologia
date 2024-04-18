@@ -1,21 +1,59 @@
-# Escreva um aplicativo que solicita ao usuário inserir dois inteiros, obtém do
-# usuário esses números e imprime sua soma, produto, diferença e divisão.
+"""
+Escreva um aplicativo que solicita ao usuário inserir dois inteiros, obtém do
+usuário esses números e imprime sua soma, produto, diferença e divisão.
+"""
 
 from os import system
 
 def soma(n1:int, n2:int) -> int:
+    """Soma
+
+    Args:
+        n1 (int): _description_
+        n2 (int): _description_
+
+    Returns:
+        int: _description_
+    """
     return n1 + n2
 
 
 def subtracao(n1:int,  n2:int) -> int:
+    """Subtração
+
+    Args:
+        n1 (int): _description_
+        n2 (int): _description_
+
+    Returns:
+        int: _description_
+    """
     return n1 - n2
 
 
 def mult(n1:int, n2:int) -> int:
+    """Multiplicação
+
+    Args:
+        n1 (int): _description_
+        n2 (int): _description_
+
+    Returns:
+        int: _description_
+    """
     return n1*n2
 
 
 def div(n1:int, n2:int) -> int:
+    """Divisão
+
+    Args:
+        n1 (int): _description_
+        n2 (int): _description_
+
+    Returns:
+        int: _description_
+    """
     return n1/n2
 
 

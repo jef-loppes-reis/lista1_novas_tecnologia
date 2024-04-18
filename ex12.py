@@ -1,8 +1,6 @@
-"""
-Coloque um número bem grande para ser executado no exemplo anterior,
-você perceberá que demora bastante, consegue pensar num solução na
-lógica para reduzir o tempo de procura?
-"""
+"""Modifique o programa anterior de forma a ler um número n. Imprima os n
+primeiros números primos."""
+
 
 from os import system
 from concurrent.futures import ProcessPoolExecutor
@@ -30,11 +28,12 @@ if __name__ == '__main__':
         if n.isnumeric():
             break
 
-    lista = range(2, int(n))
+    lista = range(2, int(n)+1)
 
     result = []
     with ProcessPoolExecutor() as executor:
         for future in executor.map(check_num_primo, lista):
+            print(future)
             result.append(future)
 
-    print(list(dict.fromkeys(result)))
+    # print(list(dict.fromkeys(result)))

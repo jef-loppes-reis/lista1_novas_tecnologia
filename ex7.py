@@ -1,10 +1,14 @@
-# Escreva um programa que leia a quantidade em segundos e imprima o
-# resultado em dias, horas, minutos e segundos.
+"""Escreva um programa que leia a quantidade em segundos e imprima o
+resultado em dias, horas, minutos e segundos."""
 
-from datetime import datetime
 from os import system
 
 def convert_seconds(seconds:int) -> None:
+    """_summary_
+
+    Args:
+        seconds (int): _description_
+    """
     dias = seconds // 86400
     seconds_rest = seconds % 86400
     horas = seconds_rest // 3600
